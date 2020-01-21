@@ -1,0 +1,5 @@
+Run following command in Powershell
+
+Invoke-Command -ComputerName GLFXDTA09 -ScriptBlock {Start-Process msiexec.exe -ArgumentList '/x {B2FDB7E5-722D-4089-9665-07CA1E0A73C6} /qn' -PassThru -Wait} -credential brian.gee
+
+Start-Process msiexec.exe -ArgumentList '/x {B2FDB7E5-722D-4089-9665-07CA1E0A73C6} /qn' -PassThru -Wait

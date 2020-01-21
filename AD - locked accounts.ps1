@@ -1,0 +1,1 @@
+Search-ADAccount -usersonly -lockedout | where {$_.Enabled -eq $true} | Unlock-ADAccount -Confirm
